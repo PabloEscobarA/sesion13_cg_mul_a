@@ -66,26 +66,29 @@ function init() {
     Cubo[0].translateY(delta);
     Cubo[0].translateZ(delta);
 
-    while (pos==1.1){
-    //movimiento de ejes cubo 1
-    angulo=(Math.PI/2)
 
+    var pos =1.1;
+    while (pos==1.1){
+
+    //movimiento de ejes cubo 1
     Cubo[1].translateX(pos);
     Cubo[1].translateY(pos);
     Cubo[1].translateZ(pos);
 
     //movimiento de ejes cubo 2
-    angulo=(Math.PI/2)
-
     Cubo[2].translateX(pos);
     Cubo[2].translateY(pos);
     Cubo[2].translateZ(pos);
     pos++
     }
-    //Movimiento del cubo 1
-    cam=1.5;
-    Cubo[1].translateY(cam);
 
+    var i=1.5;
+    if (i==1.5){
+
+    //Movimiento del cubo 1
+    Cubo[1].translateY(i);
+    }
+    
     //movimiento del cubo 2 
     cmb=2.3;
     Cubo[2].translateY(cmb);
